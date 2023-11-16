@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <link rel="shortcut icon" href="icon.svg" type="image/svg" />
     <meta charset="UTF-8" />
@@ -14,6 +14,20 @@
     />
     <!-- external css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Dark mode theme switcher -->
+    <script>
+      // It's best to inline this in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
   <body class="dark:bg-darkBlue dark:text-white font-openSans">
     <!-- HEADER CONTAINER -->
@@ -65,5 +79,7 @@
     </header>
 
     <script src="js/index.js" defer></script>
+    <!-- Tailwind CSS and Flowbite dark theme switcher -->
+    <script src="../path/to/flowbite/dist/flowbite.bundle.js"></script>
   </body>
 </html>

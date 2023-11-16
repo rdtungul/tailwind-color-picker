@@ -25,7 +25,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "logo-dark-mode": "url(../images/logo-dark-mode.svg)",
-        "logo-dark-mode": "url(../images/logo-dark-mode.svg)",
+        "logo-light-mode": "url(../images/logo-light-mode.svg)",
         "logo-curvy-dark-mode": "url(../images/logo-curvy-dark-mode.svg)",
         "logo-curvy-light-mode": "url(../images/logo-curvy-light-mode.svg)",
       }),
@@ -36,5 +36,5 @@ module.exports = {
       backgroundImage: ["dark"],
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [require("@tailwindcss/line-clamp"), require("flowbite/plugin")],
 };
