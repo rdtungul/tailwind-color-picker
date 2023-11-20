@@ -10,10 +10,6 @@
   .mb-nav-links {
     @apply w-full text-center hover:text-cyan;
   }
-  /* Footer Links Style */
-  .footer-links {
-    @apply capitalize text-grayishViolet hover:text-cyanLight;
-  }
 }
 
 /* ========== CTA Styling */
@@ -24,10 +20,6 @@
 }
 
 /* ========== Footer Links Styling */
-.ficon:hover {
-  filter: invert(50%) sepia(70%) saturate(464%) hue-rotate(130deg)
-    brightness(90%) contrast(85%);
-}
 
 @layer components {
   .align-items-center {
