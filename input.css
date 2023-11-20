@@ -34,6 +34,18 @@
   .flex-col-p6 {
     @apply flex flex-col p-6;
   }
+
+  /* Feature Row Style */
+  .feature-row-center {
+    @apply flex flex-col space-y-24 text-center;
+  }
+  /* Feature Items Style */
+  .feature-items-center {
+    @apply h-24 mb-6 align-items-center;
+  }
+  .feature-space-center {
+    @apply space-y-2 align-cols-center;
+  }
 }
 
 /* ========== HAMBURGER MENU */
